@@ -44,12 +44,12 @@ namespace Develappers.BillomatNet.Queries
 
             if (filter.From.HasValue)
             {
-                filters.Add($"from={filter.From.Value:YYYY-mm-DD}");
+                filters.Add($"from={filter.From.Value:yyyy-MM-dd}");
             }
 
             if (filter.To.HasValue)
             {
-                filters.Add($"from={filter.To.Value:YYYY-mm-DD}");
+                filters.Add($"from={filter.To.Value:yyyy-MM-dd}");
             }
 
             if (!string.IsNullOrEmpty(filter.Label))
