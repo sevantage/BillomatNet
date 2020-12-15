@@ -12,7 +12,7 @@ using Develappers.BillomatNet.Types;
 
 namespace Develappers.BillomatNet.Queries
 {
-    internal class OfferQueryStringBuilder : QueryStringBuilder<Offer, Api.Invoice, OfferFilter>
+    internal class OfferQueryStringBuilder : QueryStringBuilder<Offer, Api.Offer, OfferFilter>
     {
         protected internal override string GetFilterStringFor(OfferFilter filter)
         {
