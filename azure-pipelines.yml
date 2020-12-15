@@ -38,6 +38,11 @@ steps:
     projects: '*Tests/*.csproj'
     nobuild: true
 
+- task: NuGetToolInstaller@1
+  displayName: 'Update NuGet'
+  inputs:
+    checkLatest: true
+
 - task: DotNetCoreCLI@2
   displayName: 'dotnet pack'
   inputs:
