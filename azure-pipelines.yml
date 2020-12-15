@@ -70,6 +70,9 @@ steps:
     custom: nuget
     arguments: >
       push $(Build.ArtifactStagingDirectory)/*.nupkg
+      -s https://sevantage.pkgs.visualstudio.com/_packaging/sevantage/nuget/v3/index.json
+      -k ApiKey
+      --skip-duplicate
 
 - task: PublishPipelineArtifact@1
   inputs:
