@@ -71,6 +71,7 @@ steps:
     arguments: >
       push $(Build.ArtifactStagingDirectory)/*.nupkg
       -s https://sevantage.pkgs.visualstudio.com/_packaging/sevantage/nuget/v3/index.json
+      -ApiKey AzureDevOps
 
 - task: PublishPipelineArtifact@1
   inputs:
