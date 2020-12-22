@@ -26,7 +26,7 @@ namespace Develappers.BillomatNet.Types
         public string InvoiceNumber { get; set; }
         public int? Number { get; set; }
         public string NumberPre { get; set; }
-        public int? NumberLength { get; set; }
+        public int NumberLength { get; set; }
         public string Title { get; set; }
         public DateTime Date { get; set; }
         public ISupplyDate SupplyDate { get; set; }

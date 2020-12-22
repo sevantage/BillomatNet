@@ -95,7 +95,7 @@ namespace Develappers.BillomatNet.Mapping
                 InvoiceNumber = value.InvoiceNumber,
                 Number = value.Number.ToOptionalInt(),
                 NumberPre = value.NumberPre,
-                NumberLength = value.NumberLength.ToOptionalInt(),
+                NumberLength = int.Parse(value.NumberLength, CultureInfo.InvariantCulture),
                 Title = value.Title,
                 Date = DateTime.Parse(value.Date, CultureInfo.InvariantCulture),
                 Address = value.Address,
