@@ -116,7 +116,7 @@ namespace Develappers.BillomatNet.Mapping
                 TemplateEngine = value.TemplateEngine,
                 PrintVersion = value.PrintVersion.ToOptionalInt(),
                 DefaultEmailSender = value.DefaultEmailSender,
-                BccAddresses = value.BccAddresses?.Select(x => x.BccAddress).ToList() ?? new List<string>(),
+                BccAddresses = value.BccAddresses?.Where(x => x != null).Select(x => x.BccAddress).ToList() ?? new List<string>(),
             };
         }
 
